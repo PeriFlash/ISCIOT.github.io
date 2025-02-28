@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE CIS Task Force - Mission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0A192F;
+            color: #E0E0E0;
+        }
+        @keyframes backgroundScroll {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .wrapper {
+            max-width: 65%;
+            margin: 0 auto;
+        }
+        header {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+            background: url('image/Picture2.png') no-repeat center 20%/cover;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        header img {
+            width: 150px;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            z-index: 2;
+        }
+        .glow-text {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-image: linear-gradient(90deg, #FF8C00, #007BFF, #FF8C00);
+            background-size: 300% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glowEffect 3s linear infinite;
+            position: relative;
+            z-index: 2;
+        }
+        @keyframes glowEffect {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        nav, .container, footer {
+            color: white;
+            padding: 1em;
+            border-radius: 8px;
+            text-align: center;
+        }
+        nav {
+            background-color: #003366;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 1.2em;
+            transition: color 0.3s, transform 0.2s;
+        }
+        nav a:hover {
+            color: #FF8C00;
+            transform: scale(1.15) translateY(-3px);
+        }
+        .container {
+            background: #121212;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s;
+            text-align: left;
+        }
+        .container p {
+            font-size: 1.2em;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 0.5em;
+            border-radius: 8px;
+        }
+        #home h2 {
+            color: #FF8C00;
+        }
+        #home p {
+            color: #A0A0A0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <header>
+        <img src="image/logo1.png" alt="IEEE CIS Logo">
+        <h1 class="glow-text">IEEE CIS Task Force on Intelligent Systems for Cybersecurity of IoT</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="mission.html">Mission</a>
+        <a href="interests.html">Interests</a>
+        <a href="events.html">Events</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="members.html">Members</a>
+    </nav>
+    <div class="container fade-in">
+        <section id="home">
+            <h2>Mission</h2>
+            <p>The Task Force's mission is to serve as a catalyst for innovation in the application of intelligent systems to enhance the security and resilience of IoT ecosystems. As IoT technologies continue to evolve and integrate into critical infrastructure, smart cities, industrial automation, and consumer devices, ensuring their security against sophisticated cyber threats is of paramount importance. The Task Force aims to address these challenges by fostering groundbreaking research, pioneering new methodologies, and developing cutting-edge techniques, algorithms, and frameworks that can more effectively or innovatively detect, prevent, and mitigate emerging security risks.</p>
+            <p>At the heart of this mission is the dual focus on advancing theoretical research and supporting practical implementations. While the Task Force encourages the exploration of novel theoretical insights into cybersecurity, it also prioritizes real-world applications by promoting best practices, facilitating hands-on case studies, and contributing to standardization efforts that can enhance the security posture of IoT deployments on a global scale. By bridging the gap between academia, industry, and government institutions, the Task Force seeks to ensure that security solutions are not only innovative but also practical, scalable, and adaptable to the dynamic and evolving nature of cyber threats in IoT environments.</p>
+            <p>To further accelerate progress in this field, the Task Force actively cultivates collaboration by organizing special sessions, hosting workshops, coordinating joint research initiatives, and fostering cross-disciplinary partnerships. These efforts aim to create a robust and engaged global community of experts, researchers, industry professionals, and cybersecurity enthusiasts who share a common goal of securing IoT infrastructures against emerging cyber risks. By facilitating knowledge exchange and interdisciplinary dialogue, the Task Force strives to accelerate the maturity of intelligent cybersecurity solutions, ensuring that IoT technologies can be deployed with greater confidence, reliability, and resilience in an increasingly interconnected world.</p>
+        </section>
+    </div>
+    <footer>
+        <div style="display: flex; justify-content: space-around; align-items: center;">
+            <p>&copy; 2025 IEEE CIS Task Force on Intelligent Systems for Cybersecurity of IoT</p>
+            <p>Developed by: Yicun Tian</p>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

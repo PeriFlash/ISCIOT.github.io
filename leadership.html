@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE CIS Task Force - Leadership</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0A192F;
+            color: #E0E0E0;
+        }
+        @keyframes backgroundScroll {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .wrapper {
+            max-width: 65%;
+            margin: 0 auto;
+        }
+        header {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+            background: url('image/Picture2.png') no-repeat center 20%/cover;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        header img {
+            width: 150px;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            z-index: 2;
+        }
+        .glow-text {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-image: linear-gradient(90deg, #FF8C00, #007BFF, #FF8C00);
+            background-size: 300% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glowEffect 3s linear infinite;
+            position: relative;
+            z-index: 2;
+        }
+        @keyframes glowEffect {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        nav, .container, footer {
+            color: white;
+            padding: 1em;
+            border-radius: 8px;
+            text-align: center;
+        }
+        nav {
+            background-color: #003366;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 1.2em;
+            transition: color 0.3s, transform 0.2s;
+        }
+        nav a:hover {
+            color: #FF8C00;
+            transform: scale(1.15) translateY(-3px);
+        }
+        .container {
+            background: #121212;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            text-align: left;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 0.5em;
+            border-radius: 8px;
+        }
+        /* Section heading style */
+        #leadership h2 {
+            color: #FF8C00;
+            margin-bottom: 0.5em;
+        }
+        /* List and hover effect for each person */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        li {
+            margin: 10px 0;
+            transition: transform 0.3s;
+            font-size: 1.2em;
+            margin-left: 3em; /* Add indentation for li */
+        }
+        li:hover {
+            transform: scale(1.02);
+            color: #FF8C00;
+        }
+        /* Spacing between Chair and Vice Chairs */
+        .vice-chairs {
+            margin-top: 4em;
+        }
+        /* Link styling for mailto emails */
+        a.email-link {
+            color: #E0E0E0;
+            text-decoration: underline;
+        }
+        a.email-link:hover {
+            color: #FF8C00;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="image/logo1.png" alt="IEEE CIS Logo">
+            <h1 class="glow-text">IEEE CIS Task Force on Intelligent Systems for Cybersecurity of IoT</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="mission.html">Mission</a>
+            <a href="interests.html">Interests</a>
+            <a href="events.html">Events</a>
+            <a href="leadership.html">Leadership</a>
+            <a href="members.html">Members</a>
+        </nav>
+        <div class="container fade-in">
+            <section id="leadership">
+                <h2>Leadership</h2>
+                <!-- Chair -->
+                <h3>Chair</h3>
+                <ul>
+                    <li>Dr Pei-Wei Tsai, Swinburne University of Technology (ptsai [_at_] swin.edu.au)</li>
+                </ul>
+                <!-- Vice Chairs -->
+                <div class="vice-chairs">
+                    <h3>Vice Chairs</h3>
+                    <ul>
+                        <li>Dr Xilu Wang, University of Surrey (wangxilu [_at_] surrey.ac.uk)</li>
+                        <li>Prof Cuie Yang, Northeastern University (yangcuie [_at_] mail.neu.edu.cn)</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div style="display: flex; justify-content: space-around; align-items: center;">
+                <p>&copy; 2025 IEEE CIS Task Force on Intelligent Systems for Cybersecurity of IoT</p>
+                <p>Developed by: Yicun Tian</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

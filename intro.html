@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE CIS Task Force on Intelligent Systems for Cybersecurity of IoT</title>
+    <meta name="author" content="Yicun Tian">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            overflow: hidden;
+            background-image: url('image/background4.png');
+            background-size: cover;
+            background-position: center;
+            padding: 40px;
+            position: relative;
+        }
+
+        /* Blurred background overlay */
+        .blur-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            filter: blur(6px); /* 20% blur effect */
+            z-index: -1;
+        }
+
+        /* Logo positioning */
+        .logo {
+            position: absolute;
+            top: 5%;
+            right: 83%;
+        }
+        
+        .logo img {
+            height: 75px;
+            width: auto;
+        }
+
+        .content {
+            position: absolute;
+            top: 15%;
+            right: 5%;
+            color: white;
+            font-size: 55px;
+            font-weight: bold;
+            text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.9);
+            text-align: right;
+            max-width: 45%;
+            animation: bounce-in 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+
+        .content span {
+            display: block;
+            font-size: 75px;
+            font-weight: 900;
+            color: #ffcc00;
+        }
+
+        .keywords {
+            position: absolute;
+            top: 57%;
+            left: 8%;
+            transform: translate(0%, -50%);
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.9);
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            max-width: 50%;
+            opacity: 0;
+            animation: fade-in-keywords 2s ease-in-out 1.5s forwards;
+        }
+
+        .keywords span {
+            display: inline-block;
+            padding: 5px 10px;
+            position: relative;
+        }
+
+        @keyframes bounce-in {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fade-in-keywords {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body onclick="window.location.href='index.html';">
+    <div class="blur-overlay"></div>
+    <a href="https://cis.ieee.org/activities/technical-activities/intelligent-systems-applications" class="logo">
+        <img src="image/logo1.png" alt="IEEE CIS Logo">
+    </a>
+    <div class="content">IEEE CIS Task Force on <span>Intelligent Systems for Cybersecurity of IoT</span></div>
+    <div class="keywords">
+        <span>Artificial Intelligence (AI)</span>
+        <span>Cybersecurity</span>
+        <span>Internet of Things (IoT)</span>
+        <span>Machine Learning</span>
+        <span>Threat Detection</span>
+        <span>Digital Security</span>
+    </div>
+</body>
+</html>
